@@ -11,13 +11,15 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 500px;
   background: url("../img/header_background.jpg") black no-repeat center;
   background-size: auto 100%;
   color: #e0e0e0;
 }
 .container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 .navbar {
@@ -68,11 +70,34 @@ nav .nav a {
   text-transform: uppercase;
   text-decoration: none;
 }
+nav .subnav {
+  padding: 20px 0;
+  background: #424242;
+  box-shadow: inset 1px 4px 26px -10px #000,
+              inset 1px -4px 26px -10px #000;
+  display: none;
+}
+nav .subnav a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  color: #e0e0e0;
+  background: #424242;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 0;
+}
 nav .nav a:hover, nav .nav a:focus {
   background: #424242;
   color: #e0e0e0;
 }
-nav.open .nav {
+nav .subnav a:hover, nav .subnav a:focus {
+  background: #e0e0e0;
+  color: #424242;
+}
+nav.open .nav, .subnav.open {
   display: block;
 }
 .banner{
@@ -127,16 +152,16 @@ section {
   text-align: center;
   width: 100%;
 }
-section h2 {
+section h2, footer h3 {
   font-family: 'Ubuntu', sans-serif;
-
 }
-section .divider {
+section .divider, footer .divider {
   background-color: #02b3e4;
 }
 .project-box {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 25px;
+  margin-bottom: 35px;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 10px;
@@ -171,9 +196,39 @@ section .divider {
 }
 .project-box .project-caption {
   text-align: left;
-  font-size: 14px;
   padding: 0 10px 5px;
 }
 .project-box .project-caption h3 {
   padding: 5px 0 0 0;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-top: 1px solid #424242;
+  box-shadow: inset 1px 4px 22px -7px #424242;
+  font-size: 14px;
+  padding: 15px 10px;
+}
+footer .footer-nav {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+footer .footer-nav a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background: #424242;
+  color: #e0e0e0;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+footer .footer-nav a:hover, footer .footer-nav a:focus  {
+  color: #424242;
+  background: #e0e0e0;
+  border: 1px solid #424242;
 }

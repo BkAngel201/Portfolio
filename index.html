@@ -19,9 +19,17 @@
           </figure>
           <button type="button" class="navbar-collapse" data-toggle="navbar-collapse" data-target="topNavigationMenu"><i class="fas fa-bars"></i></button>
           <ul class="nav" id="topNavigationMenu">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="mailto:angelcouso91@gmail.com">Contact</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a href="#" data-toggle="subnavbar-collapse">Contact</a>
+              <ul class="subnav">
+                <li><a href="https://codepen.io/BkAngel201/" title="Codepen Link" alt="Codepen Link" target="_blank">Codepen</a></li>
+                <li><a href="https://github.com/BkAngel201/" title="Github Link" alt="Github Link" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/angel-couso-bk201/" title="LinkedIn Link" alt="LinkedIn Link" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:angelcouso91@gmail.com" title="Contact: Email" alt="Contact: Email" target="_blank">Email</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
@@ -45,6 +53,11 @@
     </header>
     <main>
       <div class="container">
+        <section id="about-me">
+          <h2>About Me</h2>
+          <div class="divider"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
         <section id="projects">
           <h2>Projects</h2>
           <div class="divider"></div>
@@ -63,7 +76,6 @@
               <h3>Memory Game</h3>
               <div class="divider"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
             </div>
           </article>
           <article class="project-box">
@@ -81,12 +93,22 @@
               <h3>My Community App</h3>
               <div class="divider"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
             </div>
           </article>
         </section>
       </div>
     </main>
+    <footer>
+      <h3>Angel Couso</h3>
+      <div class="divider"></div>
+      <p>Front End Developer</p>
+      <ul class="footer-nav">
+        <li><a href="https://codepen.io/BkAngel201/" title="Codepen Link" alt="Codepen Link" target="_blank"><i class="fab fa-codepen"></i></a></li>
+        <li><a href="https://github.com/BkAngel201/" title="Github Link" alt="Github Link" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/angel-couso-bk201/" title="LinkedIn Link" alt="LinkedIn Link" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="mailto:angelcouso91@gmail.com" title="Contact: Email" alt="Contact: Email" target="_blank"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </body>
