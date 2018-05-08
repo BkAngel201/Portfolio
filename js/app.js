@@ -10,6 +10,7 @@ $(".navbar ul.nav a:not([data-toggle=subnavbar-collapse])").on("click", function
 $("[data-toggle=subnavbar-collapse]").on("click",function(){
   $(this).siblings("ul.subnav").toggleClass("open");
   $(this).toggleClass("active");
+  $(this).parents("nav").addClass("open");
 });
 $("nav .subnav a").on("click", function(){
   $(this).parents(".subnav").removeClass("open");

@@ -3,29 +3,36 @@
   padding: 0;
   margin: 0;
 }
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #333;
 }
-header {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  min-height: 500px;
-  background: url("../img/header_background.jpg") black no-repeat center;
-  background-size: auto 100%;
-  color: #e0e0e0;
-}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 500px;
+  background: url(../img/header_background.jpg) black no-repeat center;
+  background-size: auto 100%;
+  color: #e0e0e0;
+}
+
 .navbar {
   justify-content: space-between;
   padding: 7px 15px;
 }
+
 nav {
   position: fixed;
   display: flex;
@@ -34,9 +41,11 @@ nav {
   min-height: 50px;
   background: #424242;
 }
+
 nav.open {
   height: 100vh;
 }
+
 nav .navbar-collapse {
   background: transparent;
   border: 1px solid #e0e0e0;
@@ -46,10 +55,12 @@ nav .navbar-collapse {
   color: #e0e0e0;
   height: 35px;
 }
+
 nav img {
   width: 35px;
   height: auto;
 }
+
 nav .nav {
   position: absolute;
   top: 53px;
@@ -61,6 +72,7 @@ nav .nav {
   padding-top: 20px;
   display: none;
 }
+
 nav .nav a {
   display: inline-block;
   text-align: center;
@@ -70,10 +82,12 @@ nav .nav a {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 nav .nav a:hover {
   background: #424242;
   color: #e0e0e0;
 }
+
 nav .subnav {
   padding: 20px 0;
   background: #424242;
@@ -81,6 +95,7 @@ nav .subnav {
               inset 1px -4px 26px -10px #000;
   display: none;
 }
+
 nav .subnav a {
   display: inline-block;
   text-align: center;
@@ -93,19 +108,25 @@ nav .subnav a {
   font-size: 14px;
   margin: 5px 0;
 }
-nav .subnav a:hover, nav .nav .active {
+
+nav .subnav a:hover,
+nav .nav .active {
   background: #e0e0e0;
   color: #424242;
 }
-nav.open .nav, .subnav.open {
+
+nav.open .nav,
+.subnav.open {
   display: block;
 }
-.banner{
+
+.banner {
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex: 1;
 }
+
 .banner img {
   width: 200px;
   height: auto;
@@ -113,40 +134,48 @@ nav.open .nav, .subnav.open {
   border: 2px solid #e0e0e0;
   margin-bottom: 15px;
 }
+
 .banner h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 2.75rem;
   line-height: 1rem;
 }
-.banner hgroup {
+
+.banner .banner-name {
   text-align: center;
 }
+
 .banner .thought {
   padding: 3px 60px;
   text-align: center;
   font-size: 14px;
 }
+
 .divider {
   height: 1px;
   width: 100%;
   background-color: #e0e0e0;
   margin: 7px 0 10px 0;
 }
+
 .arrow-continue {
   justify-content: center;
   height: 55px;
   font-size: 70px;
 }
+
 .arrow-continue .fas {
   animation: growArrowContinue 3s infinite ease-in-out;
 }
+
 @keyframes growArrowContinue {
-  0%    {line-height: 1.2rem}
-  50%   {line-height: 2.5rem}
-  100%  {line-height: 1.2rem}
+  0%    { line-height: 1.2rem; }
+  50%   { line-height: 2.5rem; }
+  100%  { line-height: 1.2rem; }
 }
 
 /* Main */
+
 section {
   padding: 30px 10px;
   text-align: center;
@@ -155,12 +184,17 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
-section h2, footer h3 {
-  font-family: 'Ubuntu', sans-serif;
+
+section h2,
+footer h3 {
+  font-family: "Ubuntu", sans-serif;
 }
-section .divider, footer .divider {
+
+section .divider,
+footer .divider {
   background-color: #02b3e4;
 }
+
 .project-box {
   width: 100%;
   margin-top: 25px;
@@ -170,21 +204,29 @@ section .divider, footer .divider {
   padding-bottom: 10px;
   border-bottom: 1px solid #e0e0e0;
 }
+
 .project-box figure {
   width: calc(100% - 70px);
 }
+
 .project-box img {
   width: 100%;
+  border: 2px solid #424242;
+  border-radius: 3px;
 }
+
 .project-box .project-links {
   width: 70px;
 }
+
 .project-box .project-links ul {
   list-style: none;
 }
+
 .project-box .project-links li {
   margin-bottom: 7px;
 }
+
 .project-box .project-links a {
   display: inline-block;
   width: 50px;
@@ -193,17 +235,23 @@ section .divider, footer .divider {
   background: #424242;
   border-radius: 3px;
 }
+
 .project-box .project-links a:hover {
   color: #424242;
   background: #e0e0e0;
 }
+
 .project-box .project-caption {
   text-align: left;
   padding: 0 10px 5px;
 }
+
 .project-box .project-caption h3 {
   padding: 5px 0 0 0;
 }
+
+/* Footer */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -215,6 +263,7 @@ footer {
   font-size: 14px;
   padding: 15px 10px;
 }
+
 footer .footer-nav {
   list-style: none;
   font-size: 1.4rem;
@@ -222,6 +271,7 @@ footer .footer-nav {
   margin-top: 18px;
   margin-bottom: 5px;
 }
+
 footer .footer-nav a {
   padding: 5px 10px;
   margin: 0 5px;
@@ -230,11 +280,14 @@ footer .footer-nav a {
   border-radius: 3px;
   border: 1px solid transparent;
 }
+
 footer .footer-nav a:hover  {
   color: #424242;
   background: #e0e0e0;
   border: 1px solid #424242;
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 550px) {
   .container {
@@ -248,29 +301,34 @@ footer .footer-nav a:hover  {
   .banner img {
     width: 270px;
   }
+
   .banner h1 {
     font-size: 3.25rem;
     line-height: 2rem;
   }
+
   .banner h3 {
     font-size: 1.9rem;
   }
+
   .banner .thought {
     font-size: 1.3rem;
   }
-  article {
+
+  .project-box {
     width: 50%!important;
   }
+
   .container {
     width: 768px;
   }
 }
 
-
 @media screen and (min-width: 991px) {
   nav .navbar-collapse {
     display: none;
   }
+
   nav .nav {
     display: inline-block;
     position: relative;
@@ -281,10 +339,12 @@ footer .footer-nav a:hover  {
     padding-top: 0px;
     background: #424242;
   }
+
   nav .nav li {
     display: inline-block;
     margin-left: 10px;
   }
+
   nav .nav a {
     padding: 9px 15px;
     background: #424242;
@@ -292,10 +352,12 @@ footer .footer-nav a:hover  {
     border-radius: 3px;
     border: 1px solid #e0e0e0;
   }
+
   nav .nav a:hover {
     color: #424242;
     background: #e0e0e0;
   }
+
   nav .subnav {
     position: absolute;
     min-width: 210px;
@@ -304,28 +366,48 @@ footer .footer-nav a:hover  {
     padding-bottom: 5px;
     box-shadow: none;
   }
+
   nav .subnav li {
     display: block;
     margin: 10px;
   }
+
   nav.open {
     height: 50px;
   }
-  article {
+
+  .project-box {
     width: 33% !important;
     padding: 0 15px 10px;
   }
+
   .container {
     width: 991px;
   }
+
+  .project-box figure {
+    width: calc(100% - 60px);
+  }
+
+  .project-box .project-links {
+    width: 60px;
+  }
+
+  .project-box .project-links a {
+    width: 40px;
+    padding: 7px 0;
+  }
+
+  .project-box .project-links .fa-2x {
+    font-size: 1.5em !important;
+  }
+
 }
 
 
 @media screen and (min-width: 1199px) {
-  article {
-    width: 25% !important;
-  }
   .container {
     width: 1199px;
   }
+
 }
